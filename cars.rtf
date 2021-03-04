@@ -4,10 +4,32 @@
 }
 {\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgray\c0\c0;\cssrgb\c81961\c82353\c82745;
 }
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh16080\viewkind0
 \deftab720
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 \strokec4 Creare la struttura della vostra tabella, che sar\'e0 molto utile per il vostro nuovissimo e promettente concessionario di auto usate.\
-Utilizzare i types e gli attributi. Identificare la Primary Key (PK) e dove potrebbero essere definiti i valori di default e delle chiavi univoche (unique)}
+Utilizzare i types e gli attributi. Identificare la Primary Key (PK) e dove potrebbero essere definiti i valori di default e delle chiavi univoche (unique)\
+\
+\
+\
+cars_id                    PK		BIGINT              		AUTO_INCREMENT\
+\
+brand                                 		VARCHAR         		NOTNULL\
+\
+model					VARCHAR       	 		NOTNULL\
+\
+matriculation				DATE               			NOTNULL\
+\
+displacement				SMALLINT           		NOTNULL\
+\
+typology					VARCHAR (10)      	  	NOTNULL\
+\
+color						VARCHAR        			NULL\
+\
+doors					VARCHAR        			NOTNULL     			DEFAULT  5\
+\
+second_hand				TINYINT(1)       			NOTNULL\
+\
+price						DECIMAL(6,3)   		NOTNULL}
